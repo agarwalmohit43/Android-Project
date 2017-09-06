@@ -43,18 +43,19 @@ public class MyCustomAdapter extends RecyclerView.Adapter<MyCustomAdapter.MyView
     @Override
     public void onBindViewHolder(MyViewHolder holder, final int position) {
 
-        holder.heading.setText(dataList.get(position).getHeading());
-        holder.desc.setText(dataList.get(position).getDesc());
+//        holder.heading.setText(dataList.get(position).getHeading());
+//        holder.desc.setText(dataList.get(position).getDesc());
 
 //        For loading image
         Picasso.with(context).load(dataList.get(position).getImageUrl()).into(holder.imageView);
+
 
 //        OnClickListener On items clicked linearLayout
 
         holder.linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context,"You Choose : "+dataList.get(position).getHeading(),Toast.LENGTH_SHORT).show();
+//                Toast.makeText(context,"You Choose : "+dataList.get(position).getHeading(),Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -66,14 +67,14 @@ public class MyCustomAdapter extends RecyclerView.Adapter<MyCustomAdapter.MyView
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView heading,desc;
+//        TextView heading,desc;
         ImageView imageView;
         LinearLayout linearLayout;
 
         public MyViewHolder(View itemView) {
             super(itemView);
-            heading = (TextView) itemView.findViewById(R.id.textViewheading);
-            desc = (TextView) itemView.findViewById(R.id.textViewDesc);
+//            heading = (TextView) itemView.findViewById(R.id.textViewheading);
+//            desc = (TextView) itemView.findViewById(R.id.textViewDesc);
             imageView = (ImageView) itemView.findViewById(R.id.imageViewImage);
             linearLayout = (LinearLayout) itemView.findViewById(R.id.customLinearLayout);
         }

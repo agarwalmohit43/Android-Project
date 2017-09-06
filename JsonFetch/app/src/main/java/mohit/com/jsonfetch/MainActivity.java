@@ -1,11 +1,15 @@
 package mohit.com.jsonfetch;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
+import android.support.design.widget.Snackbar;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -41,8 +45,8 @@ public class MainActivity extends AppCompatActivity {
         swipeRefreshLayout = (SwipeRefreshLayout)findViewById(R.id.onSwipe);
 
         recyclerView.setHasFixedSize(true);
+//        recyclerView.setLayoutManager(new GridLayoutManager(this,2));
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
         listItems = new ArrayList<>();
 //        for(int i=1;i<=10;i++)
 //        {
@@ -57,6 +61,30 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         getDataFromServer();
+
+
+        recyclerView.addOnItemTouchListener(new RecyclerTouchListener(this,recyclerView, new ClickListener() {
+            @Override
+            public void onClick(View view, int position) {
+                ListItem obj=listItems.get(position);
+
+                Bundle sendInfo = new Bundle();
+                sendInfo.putString("heading",obj.getHeading());
+                sendInfo.putString("desc",obj.getDesc());
+                sendInfo.putString("imgUrl",obj.getImageUrl());
+
+                Intent intent = new Intent(getApplicationContext(),ShowDetails.class);
+                intent.putExtras(sendInfo);
+                startActivity(intent);
+            }
+
+            @Override
+            public void onLongClick(View view, int position) {
+
+//                Snackbar.make(recyclerView,"You Choose : "+listItems.get(position).getHeading(),5000);
+                Toast.makeText(getApplicationContext(),"You Choose : "+listItems.get(position).getHeading(),Toast.LENGTH_SHORT).show();
+            }
+        }));
     }
 
     private void refreshItems() {
@@ -108,4 +136,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public interface ClickListener {
+        void onClick(View view, int position);
+
+        void onLongClick(View view, int position);
+    }
+
+
 }
+
+
