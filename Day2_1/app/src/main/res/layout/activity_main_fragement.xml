@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/fragments1"
+        android:onClick="fragmentProcess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragment With XML" />
+
+    <Button
+        android:id="@+id/fragments2"
+        android:onClick="fragmentProcess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragment With JAVA" />
+
+    <Button
+        android:id="@+id/fragments3"
+        android:onClick="fragmentProcess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragment Communication" />
+
+    <Button
+        android:id="@+id/fragments4"
+        android:onClick="fragmentProcess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Slide Tabs" />
+
+    <Button
+        android:id="@+id/fragments5"
+        android:onClick="fragmentProcess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scrollabel Tabs" />
+
+    <Button
+        android:id="@+id/fragments6"
+        android:onClick="fragmentProcess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="App Drawer" />
+
+    <Button
+        android:id="@+id/fragments7"
+        android:onClick="fragmentProcess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Custom App Drawer" />
+
+    <Button
+        android:id="@+id/fragments8"
+        android:onClick="fragmentProcess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/fragments9"
+        android:onClick="fragmentProcess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/fragments10"
+        android:onClick="fragmentProcess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+</LinearLayout>

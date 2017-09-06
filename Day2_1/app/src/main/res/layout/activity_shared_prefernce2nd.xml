@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="example.mohit.com.day2_1.SharedPrefernce2nd">
+
+    <Button
+        android:id="@+id/SharedPrefernce2ndLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="49dp"
+        android:onClick="SharedPrefernce2ndLoad"
+        android:text="Load" />
+
+    <Button
+        android:id="@+id/SharedPrefernce2ndprevious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/SharedPrefernce2ndLoad"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="49dp"
+        android:onClick="SharedPrefernce2ndprevious"
+        android:text="Previous" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SharedPrefernce2ndLoad"
+        android:layout_alignStart="@+id/SharedPrefernce2ndLoad"
+        android:layout_below="@+id/SharedPrefernce2ndLoad"
+        android:layout_marginTop="78dp"
+        android:text="Username" />
+
+    <TextView
+        android:id="@+id/SharedPrefernce2nduname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignEnd="@+id/SharedPrefernce2ndpass"
+        android:layout_alignLeft="@+id/SharedPrefernce2ndpass"
+        android:layout_alignRight="@+id/SharedPrefernce2ndpass"
+        android:layout_alignStart="@+id/SharedPrefernce2ndpass"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_centerVertical="true"
+        android:text="Password" />
+
+    <TextView
+        android:id="@+id/SharedPrefernce2ndpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SharedPrefernce2ndprevious"
+        android:layout_alignStart="@+id/SharedPrefernce2ndprevious"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_alignRight="@+id/SharedPrefernce2ndprevious"
+        android:layout_alignEnd="@+id/SharedPrefernce2ndprevious" />
+</RelativeLayout>

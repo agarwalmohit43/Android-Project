@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="example.mohit.com.day2_1.storagenavigation">
+
+    <Button
+        android:id="@+id/storageBtn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="storageProcess"
+        android:text="Shared Preference" />
+
+    <Button
+        android:id="@+id/storageBtn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="storageProcess"
+        android:text="Internal Storage" />
+
+    <Button
+        android:id="@+id/storageBtn3"
+        android:onClick="storageProcess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SQL LITE" />
+
+    <Button
+        android:id="@+id/storageBtn4"
+        android:layout_width="match_parent"
+        android:onClick="storageProcess"
+        android:layout_height="wrap_content"
+        android:text="SQL Lite Insert" />
+
+    <Button
+        android:id="@+id/storageBtn5"
+        android:onClick="storageProcess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/storageBtn6"
+        android:onClick="storageProcess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/storageBtn7"
+        android:onClick="storageProcess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+</LinearLayout>

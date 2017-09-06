@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollabletabs_Viewpager"
+    tools:context="example.mohit.com.day2_4.ScrollableTabs">
+
+    <android.support.v4.view.PagerTitleStrip
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_gravity="top"
+        android:background="#33B5E5"
+        android:id="@+id/scrollabletabs_ViewpagerPageStrip">
+
+
+        </android.support.v4.view.PagerTitleStrip>
+
+</android.support.v4.view.ViewPager>

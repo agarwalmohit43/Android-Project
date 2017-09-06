@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="example.mohit.com.day2_3.InsertMain2Activity">
+
+
+    <EditText
+        android:id="@+id/sqlliteinsertuname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="USERNAMEE"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/sqlliteinsertpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sqlliteinsertuname"
+        android:layout_alignStart="@+id/sqlliteinsertuname"
+        android:layout_below="@+id/sqlliteinsertuname"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="PASSWORD"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/sqlliteinsertbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sqlliteinsertadduser"
+        android:layout_marginTop="51dp"
+        android:text="ADD USER"
+        android:layout_below="@+id/sqlliteinsertpass"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/sqlliteinsertviewdetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="61dp"
+        android:text="VIEW ALL DETAILS"
+        android:onClick="sqlliteinsertshowdetails"
+        android:layout_below="@+id/sqlliteinsertbtn"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

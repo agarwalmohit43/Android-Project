@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="example.mohit.com.day2_1.Internalstorage1st">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Username" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_alignBaseline="@+id/Internalstorage1stpass"
+        android:layout_alignBottom="@+id/Internalstorage1stpass"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/Internalstorage1stuname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Username"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="22dp"
+        android:layout_marginEnd="22dp" />
+
+    <EditText
+        android:id="@+id/Internalstorage1stpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/Internalstorage1stuname"
+        android:layout_alignLeft="@+id/Internalstorage1stuname"
+        android:layout_alignStart="@+id/Internalstorage1stuname" />
+
+    <Button
+        android:id="@+id/Internalstorage1stsavebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/Internalstorage1stpass"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:onClick="Internalstorage1stsave"
+        android:layout_marginTop="80dp"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/Internalstorage1stnextbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Internalstorage1stsavebtn"
+        android:layout_alignEnd="@+id/Internalstorage1stpass"
+        android:layout_alignRight="@+id/Internalstorage1stpass"
+        android:layout_marginEnd="42dp"
+        android:onClick="Internalstorage1stnext"
+        android:layout_marginRight="42dp"
+        android:text="Next" />
+</RelativeLayout>

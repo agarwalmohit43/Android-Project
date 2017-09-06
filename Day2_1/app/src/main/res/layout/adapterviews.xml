@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <Button
+        android:id="@+id/adapbtn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="adapprocess"
+        android:text="ListView" />
+
+    <Button
+        android:id="@+id/adapbtn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="adapprocess"
+        android:text="ListViewImage" />
+
+    <Button
+        android:id="@+id/adapbtn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="adapprocess"
+        android:text="GridView" />
+
+    <Button
+        android:id="@+id/adapbtn4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="adapprocess"
+        android:text="Spinner" />
+
+    <Button
+        android:id="@+id/adapbtn5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="adapprocess"
+        android:text="Frame ImageView" />
+
+    <Button
+        android:id="@+id/adapbtn6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="adapprocess"
+        android:text="Fragments" />
+
+    <Button
+        android:id="@+id/adapbtn7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="adapprocess"
+        android:text="Layout Inflater" />
+</LinearLayout>
